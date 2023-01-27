@@ -20,6 +20,6 @@ def variance(vector):
     
 def standard_deviation(vector):
     """Returns the standard deviation of an input numerical vector."""
-    variance = variance(vector)
-    sd = float(variance ** 0.5)
+    var = variance(vector)
+    sd = float(var ** 0.5)
     return sd
