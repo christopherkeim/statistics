@@ -1,6 +1,6 @@
 from math import log
 
-def entropy(self, samples):
+def entropy(samples):
 	"""
 	Takes a 2d nested list of samples, extracts a frequency count of the output variable values, them calculates the entropy for this group
     of samples as entropy = Σ pi * log2(pi)   [from i=1 to n]
