@@ -22,11 +22,11 @@ def pearson_correlation(xlist, ylist):
     #Sum of products.
     psum = 0.0
     for i in range(n):
-        psum =+ xlist[i] * ylist[i]
+        psum += xlist[i] * ylist[i]
         
     #Calculate Pearson correlation coefficient
     num = psum - (sumx * sumy / n)
-    den = ((sumx_sq - (sumx ** 2) / n ) * (sumy_sq - ((sumy ** 2) / n))) ** 0.5
+    den = ((sumx_sq - ((sumx ** 2) / n )) * (sumy_sq - ((sumy ** 2) / n))) ** 0.5
     if den == 0:
         return 0
     r = num / den
